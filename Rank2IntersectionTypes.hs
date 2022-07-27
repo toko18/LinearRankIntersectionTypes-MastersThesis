@@ -22,7 +22,7 @@ instance Show Type1 where
 
 instance Show Type2 where
     show (T2_0 t)     = show t
-    show (T2Ap t1 t2) = ('(':show t1) ++ ('-':'>':show t2) ++ [')']
+    show (T2Ap t1 t2) = ('(':show t1) ++ (' ':'-':'>':' ':show t2) ++ [')']
 
 
 -------Transformation of <=2,1-satisfaction problems into unification problems (based on Corollary 33 (Cap.3.1), Rank 2 type systems and recursive definitions)-------
