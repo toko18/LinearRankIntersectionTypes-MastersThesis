@@ -1,0 +1,55 @@
+# Example of input with every possible command
+
+
+
+# To comment a line, start it with the '#' character
+# To print a line of text, start it with the '-' character
+
+
+
+------------------------------
+-Examples of lambda-terms:
+------------------------------
+-
+
+\x.\y.x y
+
+\f.\x.f (f x)
+
+(\x.x) (\x.x)
+
+\x.x \x.x
+
+
+-
+------------------------------
+-Examples of type inference:
+------------------------------
+-
+
+ti0 ((\x.x) (\x.x) (\x.x))
+
+ti2 ((\x.x) (\x.x) (\x.x))
+
+qti2 ((\x.x) (\x.x) (\x.x))
+
+qti2 ((\x.x) (\x.x) (\x.x)) count
+
+
+-
+------------------------------
+-Examples of reductions:
+------------------------------
+-
+
+reduceMax ((\x.x) (\x.x) (\x.x))
+reduceMax ((\x.x) (\x.x) (\x.x)) count
+reduceMax ((\x.x) (\x.x) (\x.x)) steps
+
+reduceNorm ((\x.x) (\x.x) (\x.x))
+reduceNorm ((\x.x) (\x.x) (\x.x)) count
+reduceNorm ((\x.x) (\x.x) (\x.x)) steps
+
+reduceApp ((\x.x) (\x.x) (\x.x))
+reduceApp ((\x.x) (\x.x) (\x.x)) count
+reduceApp ((\x.x) (\x.x) (\x.x)) steps

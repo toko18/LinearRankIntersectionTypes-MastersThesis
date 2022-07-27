@@ -1,0 +1,20 @@
+# Small example to compare the different reduction strategies
+
+reduceMax ((\x.x x) ((\x.x) y)) steps
+reduceNorm ((\x.x x) ((\x.x) y)) steps
+reduceApp ((\x.x x) ((\x.x) y)) steps
+-------------------------------------------------
+-
+reduceMax ((\x.y) ((\x.x x) (\x.x x)))
+reduceNorm ((\x.y) ((\x.x x) (\x.x x))) steps
+reduceApp ((\x.y) ((\x.x x) (\x.x x)))
+-------------------------------------------------
+-
+reduceMax ((\f.\x.f (f x)) (\f.\x.f (f x)) f x) steps
+reduceNorm ((\f.\x.f (f x)) (\f.\x.f (f x)) f x) steps
+reduceApp ((\f.\x.f (f x)) (\f.\x.f (f x)) f x) steps
+-------------------------------------------------
+-
+reduceMax ((\x.\y.(\y.x y y) y) (\x.x x) z) steps
+reduceNorm ((\x.\y.(\y.x y y) y) (\x.x x) z) steps
+reduceApp ((\x.\y.(\y.x y y) y) (\x.x x) z) steps

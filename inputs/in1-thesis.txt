@@ -1,0 +1,141 @@
+# Results presented in the Thesis
+
+----------------
+(x y y)
+
+qti2 (x y y)
+reduceNorm (x y y)
+reduceApp (x y y)
+
+----------------
+(\x.x x)
+
+qti2 (\x.x x)
+reduceNorm (\x.x x)
+reduceApp (\x.x x)
+
+----------------
+(\f.\x.f (f x))
+
+qti2 (\f.\x.f (f x))
+reduceNorm (\f.\x.f (f x))
+reduceApp (\f.\x.f (f x))
+
+----------------
+((\f.\x.f (f x)) (\x.x))
+
+qti2 ((\f.\x.f (f x)) (\x.x))
+reduceNorm ((\f.\x.f (f x)) (\x.x))
+reduceApp ((\f.\x.f (f x)) (\x.x))
+
+----------------
+((\f.\x.f (f x)) ((\x.x x) y))
+
+qti2 ((\f.\x.f (f x)) ((\x.x x) y))
+reduceNorm ((\f.\x.f (f x)) ((\x.x x) y))
+reduceApp ((\f.\x.f (f x)) ((\x.x x) y))
+
+----------------
+((\x.x x) (\y.y))
+
+qti2 ((\x.x x) (\y.y))
+reduceNorm ((\x.x x) (\y.y))
+reduceApp ((\x.x x) (\y.y))
+
+----------------
+((\x.x x x) (\y.y))
+
+qti2 ((\x.x x x) (\y.y))
+reduceNorm ((\x.x x x) (\y.y))
+reduceApp ((\x.x x x) (\y.y))
+
+----------------
+((\x.x x x) (\y.y) (\f.\x.f x))
+
+qti2 ((\x.x x x) (\y.y) (\f.\x.f x))
+reduceNorm ((\x.x x x) (\y.y) (\f.\x.f x))
+reduceApp ((\x.x x x) (\y.y) (\f.\x.f x))
+
+----------------
+((\x.x x x) (\f.\x.f x) (\y.y))
+
+qti2 ((\x.x x x) (\f.\x.f x) (\y.y))
+reduceNorm ((\x.x x x) (\f.\x.f x) (\y.y))
+reduceApp ((\x.x x x) (\f.\x.f x) (\y.y))
+
+----------------
+((\f.\x.f (f (f x))) (\f.\x.f x))
+
+qti2 ((\f.\x.f (f (f x))) (\f.\x.f x))
+reduceNorm ((\f.\x.f (f (f x))) (\f.\x.f x))
+reduceApp ((\f.\x.f (f (f x))) (\f.\x.f x))
+
+----------------
+((\x.x (x (x x))) (\y.y))
+
+qti2 ((\x.x (x (x x))) (\y.y))
+reduceNorm ((\x.x (x (x x))) (\y.y))
+reduceApp ((\x.x (x (x x))) (\y.y))
+
+----------------
+((\y.(\x.x x x) y) (\x.x))
+
+qti2 ((\y.(\x.x x x) y) (\x.x))
+reduceNorm ((\y.(\x.x x x) y) (\x.x))
+reduceApp ((\y.(\x.x x x) y) (\x.x))
+
+----------------
+((\x.x x x) y)
+
+qti2 ((\x.x x x) y)
+reduceNorm ((\x.x x x) y)
+reduceApp ((\x.x x x) y)
+
+----------------
+((\x.x x x) ((\x.x) y))
+
+qti2 ((\x.x x x) ((\x.x) y))
+reduceNorm ((\x.x x x) ((\x.x) y))
+reduceApp ((\x.x x x) ((\x.x) y))
+
+----------------
+((\x.x x x x) ((\x.x) y))
+
+qti2 ((\x.x x x x) ((\x.x) y))
+reduceNorm ((\x.x x x x) ((\x.x) y))
+reduceApp ((\x.x x x x) ((\x.x) y))
+
+----------------
+((\x.x) ((\x.x) (\x.x)))
+
+qti2 ((\x.x) ((\x.x) (\x.x)))
+reduceNorm ((\x.x) ((\x.x) (\x.x)))
+reduceApp ((\x.x) ((\x.x) (\x.x)))
+
+----------------
+((\x.x) ((\x.x) (\x.x)) (\x.x))
+
+qti2 ((\x.x) ((\x.x) (\x.x)) (\x.x))
+reduceNorm ((\x.x) ((\x.x) (\x.x)) (\x.x))
+reduceApp ((\x.x) ((\x.x) (\x.x)) (\x.x))
+
+----------------
+((\y.y (\x.x)) (\x.x))
+
+qti2 ((\y.y (\x.x)) (\x.x))
+reduceNorm ((\y.y (\x.x)) (\x.x))
+reduceApp ((\y.y (\x.x)) (\x.x))
+
+----------------
+((\x.\y.\z.x z (y z)) (\x.x))
+
+qti2 ((\x.\y.\z.x z (y z)) (\x.x))
+reduceNorm ((\x.\y.\z.x z (y z)) (\x.x))
+reduceApp ((\x.\y.\z.x z (y z)) (\x.x))
+
+----------------
+((\x.(\y.y x) x) (\x.x))
+
+qti2 ((\x.(\y.y x) x) (\x.x))
+reduceNorm ((\x.(\y.y x) x) (\x.x))
+reduceApp ((\x.(\y.y x) x) (\x.x))
