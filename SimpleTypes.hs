@@ -22,7 +22,7 @@ data Unifier = Uni Subst | FAIL
 
 instance Show Type0 where
     show (TVar a)    = show a
-    show (TAp t1 t2) = ('(':show t1) ++ ('-':'>':show t2) ++ [')']
+    show (TAp t1 t2) = ('(':show t1) ++ (' ':'-':'>':' ':show t2) ++ [')']
 
 instance Show TyVar where
     show (TyVar a) = id a
